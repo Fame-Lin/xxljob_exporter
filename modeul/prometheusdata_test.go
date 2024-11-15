@@ -1,0 +1,17 @@
+package modeul
+
+import (
+	"fmt"
+	"testing"
+	"time"
+)
+
+func TestGetAccessGroupData(t *testing.T) {
+	XXLURL := "http://172.26.11.106:8080"
+	XXLCOOKIE := "_hid=BgAfrENekWN3FbhyR1XpPgA; Hm_lvt_1e14777bd42725d12c1934650d5bced6=1670471237; AdminUserKey=5e6f389b59a2bb4a; XXL_JOB_LOGIN_IDENTITY=7b226964223a312c22757365726e616d65223a2261646d696e222c2270617373776f7264223a226531306164633339343962613539616262653536653035376632306638383365222c22726f6c65223a312c227065726d697373696f6e223a6e756c6c7d"
+
+	a := time.Now()
+	GetAccessGroupData(22, XXLURL, XXLCOOKIE)
+	b := time.Now()
+	fmt.Printf("time: %v", b.Sub(a))
+}

@@ -1,0 +1,12 @@
+server:
+  port: 9331
+  hosts: "0.0.0.0"
+
+databases:
+  user: "root"
+  password: "123456"
+  database: "xxl_job"
+
+log:
+  level: "INFO"  # INFO WAN ERROR
+  path: "./log"  # /tmp/xxl_exporter/log/log
